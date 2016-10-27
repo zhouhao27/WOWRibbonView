@@ -23,8 +23,8 @@
 		38EBACD41DC1F26C00A1FF09 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		38EBACD71DC1F26C00A1FF09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		38EBACD91DC1F26C00A1FF09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		38EBACE01DC1F2CA00A1FF09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		38EBACE11DC1F2CA00A1FF09 /* WOWRibbonView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WOWRibbonView.swift; sourceTree = "<group>"; };
+		38EBACE41DC20B8200A1FF09 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -41,6 +41,7 @@
 		38EBACC11DC1F26C00A1FF09 = {
 			isa = PBXGroup;
 			children = (
+				38EBACE41DC20B8200A1FF09 /* README.md */,
 				38EBACCC1DC1F26C00A1FF09 /* WOWRibbonView */,
 				38EBACCB1DC1F26C00A1FF09 /* Products */,
 			);
@@ -71,7 +72,6 @@
 		38EBACDF1DC1F2CA00A1FF09 /* src */ = {
 			isa = PBXGroup;
 			children = (
-				38EBACE01DC1F2CA00A1FF09 /* README.md */,
 				38EBACE11DC1F2CA00A1FF09 /* WOWRibbonView.swift */,
 			);
 			path = src;
