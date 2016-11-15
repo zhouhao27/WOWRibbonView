@@ -1,11 +1,11 @@
 # WOWRibbonView
 
-![](screenshot2.jpg)
+<img src="screenshot2.jpg" width="320">
 
 - Showing Ribbon with both direction (left, right) and two different types (rift and arrow) 
 - Auto resizable
 
-![](screenshot.jpg)
+<img src="screenshot.jpg" width="300">
 
 ## Installation
 
