@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import WOWRibbonView
 
 class ViewController: UIViewController {
 

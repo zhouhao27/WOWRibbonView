@@ -1,0 +1,16 @@
+PODS:
+  - WOWRibbonView (0.1.0)
+
+DEPENDENCIES:
+  - WOWRibbonView (from `../`)
+
+EXTERNAL SOURCES:
+  WOWRibbonView:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  WOWRibbonView: 0c50f1578d5dd52a9331d676989454b0f7e72905
+
+PODFILE CHECKSUM: e934958e65c9589adc6cac69bc321e54b3bdcae9
+
+COCOAPODS: 1.2.0.beta.1

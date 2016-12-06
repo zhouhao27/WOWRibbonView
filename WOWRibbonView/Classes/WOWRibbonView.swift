@@ -8,19 +8,20 @@
 
 import UIKit
 
-@IBDesignable class WOWRibbonView: UIView {
+@IBDesignable
+open class WOWRibbonView: UIView {
 
     // MARK: properties
     
     // rift or arrow, default to arrow
-    @IBInspectable var isRift : Bool = false {
+    @IBInspectable open var isRift : Bool = false {
         didSet {
             refreshConstraints()
             refreshDisplay()
         }
     }
     
-    @IBInspectable var length : CGFloat = 5.0 {
+    @IBInspectable open var length : CGFloat = 5.0 {
         didSet {
             refreshConstraints()
             refreshDisplay()
@@ -28,7 +29,7 @@ import UIKit
     }
     
     // left or right, default to right
-    @IBInspectable var isLeft : Bool = false {
+    @IBInspectable open var isLeft : Bool = false {
         didSet {
             refreshConstraints()
             refreshDisplay()
@@ -48,32 +49,32 @@ import UIKit
 //        }
 //    }
     
-    @IBInspectable var top : CGFloat = 5.0 {
+    @IBInspectable open var top : CGFloat = 5.0 {
         didSet {
             refreshConstraints()
         }
     }
     
-    @IBInspectable var left : CGFloat = 10.0 {
+    @IBInspectable open var left : CGFloat = 10.0 {
         didSet {
             refreshConstraints()
         }
     }
     
-    @IBInspectable var right : CGFloat = 10.0 {
+    @IBInspectable open var right : CGFloat = 10.0 {
         didSet {
             refreshConstraints()
         }
     }
     
-    @IBInspectable var bottom : CGFloat = 5.0 {
+    @IBInspectable open var bottom : CGFloat = 5.0 {
         didSet {
             refreshConstraints()
         }
     }
     
     @IBInspectable
-    var text: String? {
+    open var text: String? {
         get {
             return _textLabel.text
         }
@@ -84,7 +85,7 @@ import UIKit
     }
         
     @IBInspectable
-    var textColor : UIColor {
+    open var textColor : UIColor {
         get {
             return _textLabel.textColor
         }
@@ -96,7 +97,7 @@ import UIKit
     
     // TODO: this is not supported to modify through IB
     @IBInspectable
-    var textFont : UIFont {
+    open var textFont : UIFont {
         get {
             return _textLabel.font
         }
@@ -107,7 +108,7 @@ import UIKit
     }
     
     @IBInspectable
-    var textSize : CGFloat = 14.0 {
+    open var textSize : CGFloat = 14.0 {
         didSet {
             let origFont = _textLabel.font
             _textLabel.font = UIFont(name: (origFont?.fontName)!, size: textSize)
@@ -116,7 +117,7 @@ import UIKit
     }
     
     @IBInspectable
-    var borderWidth : CGFloat = 0.0 {
+    open var borderWidth : CGFloat = 0.0 {
         didSet {
             self._shape.lineWidth = borderWidth
             refreshDisplay()
@@ -124,7 +125,7 @@ import UIKit
     }
 
     @IBInspectable
-    var borderColor : UIColor = UIColor.clear {
+    open var borderColor : UIColor = UIColor.clear {
         didSet {
             self._shape.strokeColor = borderColor.cgColor
             refreshDisplay()
@@ -132,7 +133,7 @@ import UIKit
     }
     
     @IBInspectable
-    var fillColor : UIColor = UIColor.white {
+    open var fillColor : UIColor = UIColor.white {
         didSet {
             self._shape.fillColor = fillColor.cgColor
         }
@@ -151,16 +152,16 @@ import UIKit
     private var _setup : Bool = false
     
     // MARK: init
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         setup()
     }
     
-    required init?(coder aDecoder: NSCoder) {
+    required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
     }
     
-    override func awakeFromNib() {
+    override open func awakeFromNib() {
         setup()
     }
     
@@ -221,7 +222,7 @@ import UIKit
     
     // MARK: draw
     
-    override func draw(_ rect: CGRect) {
+    override open func draw(_ rect: CGRect) {
         
         // TODO: to consider the bounds orgin is not (0,0)
         let path = UIBezierPath()

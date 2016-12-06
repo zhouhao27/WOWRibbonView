@@ -1,0 +1,6 @@
+framework module Pods_WOWRibbonView_Example {
+  umbrella header "Pods-WOWRibbonView_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

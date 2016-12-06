@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'WOWRibbonView_Example' do
+  pod 'WOWRibbonView', :path => '../'
+
+  target 'WOWRibbonView_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
